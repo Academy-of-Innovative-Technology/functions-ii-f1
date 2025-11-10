@@ -29,14 +29,14 @@ document.getElementById('multiplyBtn').addEventListener('click', () => {
 document.getElementById('divideBtn').addEventListener('click', () => {
   const n1 = getNumber('num1');
   const n2 = getNumber('num2');
-  if (n2 === 0) return showResult('basicResult', '❌ Cannot divide by 0');
+  if (n2 === 0) return showResult('basicResult', ' Cannot divide by 0');
   showResult('basicResult', `Quotient = ${(n1 / n2).toFixed(2)}`);
 });
 
 document.getElementById('modulusBtn').addEventListener('click', () => {
   const n1 = getNumber('num1');
   const n2 = getNumber('num2');
-  if (n2 === 0) return showResult('basicResult', '❌ Cannot divide by 0');
+  if (n2 === 0) return showResult('basicResult', ' Cannot divide by 0');
   showResult('basicResult', `Remainder = ${n1 % n2}`);
 });
 
@@ -119,7 +119,7 @@ document.getElementById('cylinderBtn').addEventListener('click', () => {
 document.getElementById('speedBtn').addEventListener('click', () => {
   const d = getNumber('distance');
   const t = getNumber('timeSpeed');
-  if (t === 0) return showResult('speedResult', '❌ Time cannot be 0');
+  if (t === 0) return showResult('speedResult', ' Time cannot be 0');
   showResult('speedResult', `Speed = ${(d / t).toFixed(2)}`);
 });
 
@@ -127,7 +127,7 @@ document.getElementById('speedBtn').addEventListener('click', () => {
 document.getElementById('densityBtn').addEventListener('click', () => {
   const m = getNumber('mass');
   const v = getNumber('volume');
-  if (v === 0) return showResult('densityResult', '❌ Volume cannot be 0');
+  if (v === 0) return showResult('densityResult', ' Volume cannot be 0');
   showResult('densityResult', `Density = ${(m / v).toFixed(2)}`);
 });
 
@@ -135,7 +135,7 @@ document.getElementById('densityBtn').addEventListener('click', () => {
 document.getElementById('bmiBtn').addEventListener('click', () => {
   const w = getNumber('weight');
   const h = getNumber('height');
-  if (h === 0) return showResult('bmiResult', '❌ Height cannot be 0');
+  if (h === 0) return showResult('bmiResult', ' Height cannot be 0');
   showResult('bmiResult', `BMI = ${(w / (h ** 2)).toFixed(2)}`);
 });
 
